@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Matching Game - Emojis</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="game-info">
+        <div>Time: <span id="time">60</span>s</div>
+        <div>Attempts: <span id="attempts">0</span></div>
+    </div>
+    <div class="effect-Card">
+        <button id="findMatchBtn" onclick="findAndFlipMatchingCard()">Find Matching Card</button>
+        <button id="removeBombBtn" onclick="removeBombCard()">Remove a Bomb</button>
+        <button id="increaseCloverBtn" onclick="increaseCloverDropRate()">More Clover</button>
+    </div>
+    <div class="game-board" id="gameBoard">
+        <!-- Cards will be dynamically generated here -->
+    </div>
+    <div class="game-over" id="gameOver">Game Over</div>
+    <div class="game-win" id="gameWin">Excellent! You Win</div>
+    <button class="reset-button" onclick="resetGame()">Reset Game</button>
+
+    <script src="script1.js"></script>
+</body>
+</html>
